@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>JavaScript Arrays</h2>
+<p id="demo"></p>
+
+<button onclick="listOfAnimals()"> Start </button>
+
+<script>
+	
+	function listOfAnimals(){
+		var txt;
+		
+		var animals = ["Dog", "Lion", "Elephant", "Cat", "Fox", "Bear", "Monkey", "Zebra"];
+		
+		var person = prompt("Please enter any animal name:", "Dog");
+		
+		if (animals.includes(person) == null || animals.includes(person) == ""){
+			
+		alert("Name entered not on the list");
+		} else {
+			alert("Hello! Your Favorite Animal is on the list.");
+		}
+		
+		document.getElementById("demo").innerHTML = Array.isArray(animals);
+		}
+
+		
+</script>
+
+</body>
+</html>
