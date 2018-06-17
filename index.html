@@ -39,7 +39,7 @@
 			text-align: center;
 			font-weight: bolder;
 			color: #008080;
-			
+			font-size: 40px;
 		}
 
  button {
@@ -80,7 +80,7 @@ button:active {
 		var animalsList = ["Dog", "Lion", "Elephant", "Cat", "Fox", "Bear", "Monkey", "Zebra", "Rabbit", "Panda", "Leopard", "Tiger", "Goat", "Horse", "Rat", "lizard", "Ant", "Antelope", "Ape", "Ass", "Baboon", "Badger", "Bat", "Salmon", "Seahorse", "Shark", "Snake", "Spider", "Squirrel"];
     	var animals = prompt("Please enter any animal name:",);
 		if (animalsList.includes(animals))
-        { txt = 'Hello! Your Favorite Animal '+ animals+ " is on the list.";} 
+        { txt = 'Cheers! Your Favorite Animal '+ animals+ " is on the list.";} 
         else if(animals === null || animals==="") 
         {txt ='You opted out! Try again, if you change your mind';}
         
@@ -95,6 +95,6 @@ button:active {
 <h5>Please click the start button to guess your favorite animal. Note: Enter animal name with Initial Capitals.</h5>
 <p id="demo"></p>
 
-<button onclick="listOfAnimals()"> Start </button>
+<button type="button" onclick="listOfAnimals()"> Start </button>
 </body>
 </html>
